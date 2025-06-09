@@ -10,4 +10,4 @@ blue = (0,0,255)
 
 #プレイヤー設定
 player_size = 40
-plyer_speed = 3
+player_speed = 3
