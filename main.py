@@ -6,10 +6,10 @@ import map
 
 
 pygame.init()
-map.load_tiles()
 screen = pygame.display.set_mode((config.screen_width, config.screen_height))
 pygame.display.set_caption("2D RPG")
 clock = pygame.time.Clock()
+map.load_tiles()
 
 player = Player(100,100)
 

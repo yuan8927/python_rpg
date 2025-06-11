@@ -6,7 +6,7 @@ class Player:
         self.image = pygame.image.load("assets/characters/hero.png").convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
-        self.speed = config.plyer_speed
+        self.speed = config.player_speed
      
     def handle_keys(self,keys):
         if keys[pygame.K_a]:
