@@ -7,7 +7,7 @@ map_data = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -25,8 +25,11 @@ tile_image = {}
 #タイルファイルの読み込み・格納
 def load_tiles():
     tile_image[0] = pygame.image.load("assets/tilesets/grass.png").convert_alpha()
+    tile_image[1] = pygame.image.load("assets/tilesets/grassclump.png").convert_alpha()
+
 
 """
+画像の読み込みが成功しているかの確認
 def load_tiles():
     try:
         tile_image[0] = pygame.image.load("assets/tilesets/grass.png").convert()
